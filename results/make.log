@@ -1,0 +1,487 @@
+python3 scripts/build_real.py 180
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/scripts/build_real.py", line 9, in <module>
+    from gsm import solve, cost_of_plan, heuristics
+  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/src/gsm.py", line 17, in <module>
+    from ortools.sat.python import cp_model
+  File "/opt/anaconda3/lib/python3.12/site-packages/ortools/sat/python/cp_model.py", line 62, in <module>
+    import pandas as pd
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 53, in <module>
+    from pandas.core import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/ops/__init__.py", line 8, in <module>
+    from pandas.core.ops.array_ops import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/ops/array_ops.py", line 56, in <module>
+    from pandas.core.computation import expressions
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/computation/expressions.py", line 21, in <module>
+    from pandas.core.computation.check import NUMEXPR_INSTALLED
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/computation/check.py", line 5, in <module>
+    ne = import_optional_dependency("numexpr", errors="warn")
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/opt/anaconda3/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/opt/anaconda3/lib/python3.12/site-packages/numexpr/__init__.py", line 24, in <module>
+    from numexpr.interpreter import MAX_THREADS, use_vml, __BLOCK_SIZE1__
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/scripts/build_real.py", line 9, in <module>
+    from gsm import solve, cost_of_plan, heuristics
+  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/src/gsm.py", line 17, in <module>
+    from ortools.sat.python import cp_model
+  File "/opt/anaconda3/lib/python3.12/site-packages/ortools/sat/python/cp_model.py", line 62, in <module>
+    import pandas as pd
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 67, in <module>
+    from pandas.core.arrays.masked import BaseMaskedArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/masked.py", line 61, in <module>
+    from pandas.core import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/nanops.py", line 52, in <module>
+    bn = import_optional_dependency("bottleneck", errors="warn")
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/opt/anaconda3/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/opt/anaconda3/lib/python3.12/site-packages/bottleneck/__init__.py", line 7, in <module>
+    from .move import (move_argmax, move_argmin, move_max, move_mean, move_median,
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/numpy/core/_multiarray_umath.py", line 46, in __getattr__
+    raise ImportError(msg)
+ImportError: 
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+
+ chain  stages       optimum  proved     incumbent     left  decisions     sec
+    01       8             4    True             4    0.2%          5     0.0
+    02      13         2,342    True         2,342    0.0%         13     0.1
+    03      17       208,937    True       892,134  327.0%         13     0.1
+    04      22         3,970    True         3,970    0.0%         12     0.5
+    05      27       239,206    True       247,804    3.6%         27     0.1
+    06      28           103    True           115   11.3%         16     0.3
+    07      38        72,697    True        72,697    0.0%         38     0.3
+    08      40           328    True           328    0.0%         40     0.3
+    09      49        75,092    True       163,857  118.2%         49     0.3
+    10      58     1,278,666    True     1,383,742    8.2%         52     1.7
+    11      68             2    True             2    1.0%         68     0.8
+    12      88       849,772    True     1,491,795   75.6%         37     1.8
+    13     108       793,648    True       793,648    0.0%         98     0.4
+    14     116            65    True            65    0.0%         98     3.9
+    15     133         3,446    True         3,446    0.0%         77     0.4
+    16     145        28,074    True        33,059   17.8%         85     3.3
+    17     152       554,523    True     1,336,987  141.1%        136     2.7
+    18     154         2,720    True         3,136   15.3%        153     2.8
+    19     156         9,208    True        21,246  130.7%        141     3.1
+    20     156         3,137    True         3,137    0.0%        156     0.8
+    21     186         1,527    True         1,527    0.0%        186     2.6
+    22     253         8,460    True        12,208   44.3%        136    36.8
+    23     271           155    True           155    0.0%        246     0.6
+    24     334         2,579    True         2,579    0.0%        334     1.5
+    25     409        33,809    True        36,035    6.6%        409     6.7
+    26     468       341,887    True       596,381   74.4%        468     7.4
+    27     482           294    True           294    0.0%        482     2.5
+    28     577       216,358    True       435,439  101.3%        577    11.4
+    29     617        31,421    True        48,304   53.7%        606     8.7
+    30     626         5,065    True         5,065    0.0%        406     1.9
+    31     706     1,797,174    True     2,860,706   59.2%        103     2.8
+    32     844         6,653    True         6,653    0.0%        733     8.4
+    33     976         1,621    True         1,780    9.8%        802    19.8
+    34    1206       110,807    True       117,166    5.7%       1153    11.2
+    35    1386           847    True           847    0.0%       1350     4.1
+    36    1451        15,606    True        17,512   12.2%       1366     9.9
+    37    1479        32,757    True        58,731   79.3%        956     4.6
+    38    2025        28,526    True        49,522   73.6%       1503     8.7
+
+38 chains solved, 38 proved optimal, 346 decisions each on average, 2.9 min
+the incumbent is already optimal on 39% of chains, which is sigma_0 for this read-out
+python3 scripts/sweep_real.py
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/scripts/sweep_real.py", line 17, in <module>
+    from gsm import cost_of_plan
+  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/src/gsm.py", line 17, in <module>
+    from ortools.sat.python import cp_model
+  File "/opt/anaconda3/lib/python3.12/site-packages/ortools/sat/python/cp_model.py", line 62, in <module>
+    import pandas as pd
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 53, in <module>
+    from pandas.core import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/ops/__init__.py", line 8, in <module>
+    from pandas.core.ops.array_ops import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/ops/array_ops.py", line 56, in <module>
+    from pandas.core.computation import expressions
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/computation/expressions.py", line 21, in <module>
+    from pandas.core.computation.check import NUMEXPR_INSTALLED
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/computation/check.py", line 5, in <module>
+    ne = import_optional_dependency("numexpr", errors="warn")
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/opt/anaconda3/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/opt/anaconda3/lib/python3.12/site-packages/numexpr/__init__.py", line 24, in <module>
+    from numexpr.interpreter import MAX_THREADS, use_vml, __BLOCK_SIZE1__
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/scripts/sweep_real.py", line 17, in <module>
+    from gsm import cost_of_plan
+  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/src/gsm.py", line 17, in <module>
+    from ortools.sat.python import cp_model
+  File "/opt/anaconda3/lib/python3.12/site-packages/ortools/sat/python/cp_model.py", line 62, in <module>
+    import pandas as pd
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 67, in <module>
+    from pandas.core.arrays.masked import BaseMaskedArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/masked.py", line 61, in <module>
+    from pandas.core import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/nanops.py", line 52, in <module>
+    bn = import_optional_dependency("bottleneck", errors="warn")
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/opt/anaconda3/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/opt/anaconda3/lib/python3.12/site-packages/bottleneck/__init__.py", line 7, in <module>
+    from .move import (move_argmax, move_argmin, move_max, move_mean, move_median,
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/numpy/core/_multiarray_umath.py", line 46, in __getattr__
+    raise ImportError(msg)
+ImportError: 
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+
+38 real chains, 38 proved optimal.  19 trained on (5807 labelled decisions), 19 scored.
+untrained, averaged over the widths: sigma_0 = 0.09 [7 s]
+
+ width        P       4      8     16     32     64    128    256    512   1024   2048   4096
+     1       13    0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.01   [0 min]
+     2       27    0.06   0.06   0.06   0.06   0.07   0.07   0.08   0.14   0.20   0.43   0.52   [1 min]
+     4       61    0.33   0.33   0.33   0.34   0.36   0.39   0.43   0.46   0.57   0.67   0.98   [1 min]
+     8      153    0.21   0.21   0.21   0.21   0.31   0.38   0.44   0.66   0.83   1.00   1.00   [1 min]
+    16      433    0.28   0.28   0.31   0.32   0.49   0.64   0.84   0.99   1.00   1.00   1.00   [2 min]
+    32    1,377    0.27   0.31   0.27   0.25   0.63   0.89   0.97   1.00   1.00   1.00   0.99   [2 min]
+python3 scripts/locate_real.py
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/scripts/locate_real.py", line 17, in <module>
+    from sweep import Policy
+  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/scripts/sweep.py", line 12, in <module>
+    from gsm import cost_of_plan
+  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/src/gsm.py", line 17, in <module>
+    from ortools.sat.python import cp_model
+  File "/opt/anaconda3/lib/python3.12/site-packages/ortools/sat/python/cp_model.py", line 62, in <module>
+    import pandas as pd
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 53, in <module>
+    from pandas.core import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/ops/__init__.py", line 8, in <module>
+    from pandas.core.ops.array_ops import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/ops/array_ops.py", line 56, in <module>
+    from pandas.core.computation import expressions
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/computation/expressions.py", line 21, in <module>
+    from pandas.core.computation.check import NUMEXPR_INSTALLED
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/computation/check.py", line 5, in <module>
+    ne = import_optional_dependency("numexpr", errors="warn")
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/opt/anaconda3/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/opt/anaconda3/lib/python3.12/site-packages/numexpr/__init__.py", line 24, in <module>
+    from numexpr.interpreter import MAX_THREADS, use_vml, __BLOCK_SIZE1__
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/scripts/locate_real.py", line 17, in <module>
+    from sweep import Policy
+  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/scripts/sweep.py", line 12, in <module>
+    from gsm import cost_of_plan
+  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/src/gsm.py", line 17, in <module>
+    from ortools.sat.python import cp_model
+  File "/opt/anaconda3/lib/python3.12/site-packages/ortools/sat/python/cp_model.py", line 62, in <module>
+    import pandas as pd
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 67, in <module>
+    from pandas.core.arrays.masked import BaseMaskedArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/masked.py", line 61, in <module>
+    from pandas.core import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/nanops.py", line 52, in <module>
+    bn = import_optional_dependency("bottleneck", errors="warn")
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/opt/anaconda3/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/opt/anaconda3/lib/python3.12/site-packages/bottleneck/__init__.py", line 7, in <module>
+    from .move import (move_argmax, move_argmin, move_max, move_mean, move_median,
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/numpy/core/_multiarray_umath.py", line 46, in __getattr__
+    raise ImportError(msg)
+ImportError: 
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+
+38 real chains, all proved optimal.  19 trained on, 19 scored.  Budget fixed at 256 labelled decisions; the axis searched is the program size.
+
+Step 0.  untrained success rate 0.09 (there is room to train), and it cost no training at all
+
+Step 1.  extend on both sides until the boundary is enclosed
+  scale          8   success 0.42   spread 0.408   unsure
+  scale          4   success 0.46   spread 0.339   unsure
+  scale         16   success 0.77   spread 0.208   yes
+  scale          2   success 0.09   spread 0.142   no
+  scale         32   success 0.98   spread 0.050   yes
+  bracketed: width 2 fails, width 16 succeeds
+
+Step 2.  halve the interval
+  narrowed to widths 2 to 16
+
+Step 3.  check that success stays above
+  width 32: yes
+  width 64: yes
+  upward closed
+
+P_crit is between 27 and 433 parameters, estimate 108, at 256 labelled decisions.
+
+per-seed success rates at each width probed:
+  width   2  0.11  0.26  0.00  0.05  0.00  0.00  0.00  0.42  0.00
+  width   4  0.00  0.32  0.68  0.16  1.00  0.79  0.47  0.68  0.00
+  width   6  0.00  0.05  0.42  0.32  0.11  1.00  0.21  0.84  0.00
+  width   8  0.21  1.00  0.00  0.00  1.00  0.79  0.63  0.16  0.00
+  width  16  1.00  0.42  1.00  0.79  1.00  0.79  0.79  0.47  0.63
+  width  32  0.84  1.00  1.00  1.00  1.00  0.95  1.00  1.00  1.00
+  width  64  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+
+72 training runs at 9 seeds, 0.6 min.  That buys one point of the boundary, at one budget.  The grid in sweep_real.py buys the whole curve, six program sizes by eleven budgets at five seeds, for 330 runs.
+python3 scripts/plot_real.py
+sigma, rows are parameters, columns labelled decisions:
+             4        8       16       32       64      128      256      512    1,024    2,048    4,096
+    13     0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.00     0.01
+    27     0.06     0.06     0.06     0.06     0.07     0.07     0.08     0.14     0.20     0.43     0.52
+    61     0.33     0.33     0.33     0.34     0.36     0.39     0.43     0.46     0.57     0.67     0.98
+   153     0.21     0.21     0.21     0.21     0.31     0.38     0.44     0.66     0.83     1.00     1.00
+   433     0.28     0.28     0.31     0.32     0.49     0.64     0.84     0.99     1.00     1.00     1.00
+ 1,377     0.27     0.31     0.27     0.25     0.63     0.89     0.97     1.00     1.00     1.00     0.99
+
+crossings along the budget axis
+       13 parameters: never crosses
+       27 parameters: T_crit = 3,597, chi = 1.49, P*T = 97,114
+       61 parameters: T_crit = 653, chi = 1.04, P*T = 39,807
+      153 parameters: T_crit = 307, chi = 0.73, P*T = 46,965
+      433 parameters: T_crit = 66, chi = 0.66, P*T = 28,407
+    1,377 parameters: T_crit = 50, chi = 1.26, P*T = 69,277
+
+crossings along the program axis
+        4 decisions: never crosses
+        8 decisions: never crosses
+       16 decisions: never crosses
+       32 decisions: never crosses
+       64 decisions: P_crit = 453, chi = 1.27, P*T = 28,973
+      128 decisions: P_crit = 247, chi = 1.00, P*T = 31,603
+      256 decisions: P_crit = 178, chi = 1.01, P*T = 45,533
+      512 decisions: P_crit = 72, chi = 0.92, P*T = 36,997
+    1,024 decisions: P_crit = 52, chi = 1.04, P*T = 53,690
+    2,048 decisions: P_crit = 34, chi = 1.36, P*T = 69,619
+    4,096 decisions: P_crit = 26, chi = 1.59, P*T = 108,095
+
+critical work, the smallest P*T on the boundary: 28,407
+21 of 66 scales work, 32% of the grid; a scale chosen blind averages 0.41 against 0.87 inside the region
+wrote figures/cutoff_real.pdf
+python3 scripts/plot_chains.py
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/scripts/plot_chains.py", line 21, in <module>
+    from willems import load, ELECTRONICS
+  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/src/willems.py", line 16, in <module>
+    import numpy as np, pandas as pd
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 53, in <module>
+    from pandas.core import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/ops/__init__.py", line 8, in <module>
+    from pandas.core.ops.array_ops import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/ops/array_ops.py", line 56, in <module>
+    from pandas.core.computation import expressions
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/computation/expressions.py", line 21, in <module>
+    from pandas.core.computation.check import NUMEXPR_INSTALLED
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/computation/check.py", line 5, in <module>
+    ne = import_optional_dependency("numexpr", errors="warn")
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/opt/anaconda3/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/opt/anaconda3/lib/python3.12/site-packages/numexpr/__init__.py", line 24, in <module>
+    from numexpr.interpreter import MAX_THREADS, use_vml, __BLOCK_SIZE1__
+AttributeError: _ARRAY_API not found
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/scripts/plot_chains.py", line 21, in <module>
+    from willems import load, ELECTRONICS
+  File "/Users/henry_han/LHP3/SuperP2026/IJOC-REPO/src/willems.py", line 16, in <module>
+    import numpy as np, pandas as pd
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/arrow/array.py", line 67, in <module>
+    from pandas.core.arrays.masked import BaseMaskedArray
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/arrays/masked.py", line 61, in <module>
+    from pandas.core import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/core/nanops.py", line 52, in <module>
+    bn = import_optional_dependency("bottleneck", errors="warn")
+  File "/opt/anaconda3/lib/python3.12/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/opt/anaconda3/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/opt/anaconda3/lib/python3.12/site-packages/bottleneck/__init__.py", line 7, in <module>
+    from .move import (move_argmax, move_argmin, move_max, move_mean, move_median,
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.12/site-packages/numpy/core/_multiarray_umath.py", line 46, in __getattr__
+    raise ImportError(msg)
+ImportError: 
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.5.2 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+
+wrote figures/chains.pdf, 38 chains, 8 to 2025 stages
