@@ -1,33 +1,33 @@
-# Locating Machine Learning Boundary in Wafer Fab Scheduling and Multiechelon Inventory
+# Locating the Machine Learning Boundary in Wafer Fab Scheduling and Multiechelon Inventory
 
-This archive is distributed under the [MIT
-License](LICENSE).
+Code and data for the manuscript *Locating the Machine Learning Boundary in
+Wafer Fab Scheduling and Multiechelon Inventory* by H. Han, **submitted to the
+[INFORMS Journal on Computing](https://pubsonline.informs.org/journal/ijoc)**.
+The code is under the [MIT License](LICENSE).
 
-The software and data in this repository are a snapshot of the software and data
-that were used in the research reported in the paper *Locating the Boundary Where
-Machine Learning Starts to Work in Wafer Fab Scheduling and Multiechelon
-Inventory* by H. Han.
+The manuscript is under review. It has not been accepted and no decision has
+been made, so nothing here should be read as a journal publication. This
+repository exists so that a referee, or anyone else, can check any number in
+the manuscript against the runs it came from.
+
+If the paper is accepted, this repository is deposited in the
+[INFORMSJoC](https://github.com/INFORMSJoC) organisation under the manuscript's
+number, with the `README`, `LICENSE` and `AUTHORS` that organisation asks for,
+and DOIs are assigned to the paper and to the repository at that point.
 
 ## Cite
 
-To cite the contents of this repository, please cite both the paper and this
-repo, using their respective DOIs.
-
-https://doi.org/10.1287/ijoc.XXXX.YYYY
-
-https://doi.org/10.1287/ijoc.XXXX.YYYY.cd
-
-Below is the BibTex for citing this snapshot of the repository.
+Until the paper appears, cite the manuscript itself and this repository by its
+URL. No DOI has been assigned to either.
 
 ```
-@misc{superp2026,
-  author =        {Han, Henry},
-  publisher =     {INFORMS Journal on Computing},
-  title =         {Locating the Boundary Where Machine Learning Starts to Work},
-  year =          {2026},
-  doi =           {10.1287/ijoc.XXXX.YYYY.cd},
-  url =           {https://github.com/INFORMSJoC/XXXX.YYYY},
-  note =          {Available for download at https://github.com/INFORMSJoC/XXXX.YYYY},
+@unpublished{superp2026,
+  author = {Han, Henry},
+  title  = {Locating the Machine Learning Boundary in Wafer Fab Scheduling and
+            Multiechelon Inventory},
+  year   = {2026},
+  note   = {Manuscript submitted to the INFORMS Journal on Computing.
+            Code and data at https://github.com/[repository]},
 }
 ```
 
@@ -54,8 +54,12 @@ src/        the model: the policies, the exact formulations, the label
 scripts/    the drivers that produce every number and figure in the paper
 data/       the published inputs, used as distributed
 results/    what the drivers write, including the logs quoted in the paper
-figures/    the figures as they appear in the paper
 ```
+
+The figures are not kept here. They are outputs, and every one of them is drawn
+from the files in `results/` by a script in `scripts/`; the plotting scripts
+create `figures/` when they run. Keeping the drawn copies as well would mean two
+versions of the same picture that can disagree.
 
 ## Building
 
@@ -102,7 +106,7 @@ fixed, all thirty-eight networks return identical service-time vectors on repeat
 ## Results
 
 The boundary on the thirty-eight published supply networks is in
-`results/sweep_real.json` and drawn in `figures/cutoff_real.pdf`. The run of the
+`results/sweep_real.json`, which `scripts/plot_real.py` draws. The run of the
 locator is `results/locate_real.log`. The fab sweeps are `results/imitate.jsonl`
 and `results/imitate_hvlm.jsonl`, and every number in the fab sections is in
 `results/results.json`.
