@@ -21,7 +21,7 @@ Until the paper appears, cite the manuscript itself and this repository by its
 URL. No DOI has been assigned to either.
 
 ```
-@unpublished{superp2026,
+@unpublished{han2026locating,
   author = {Han, Henry},
   title  = {Locating the Machine Learning Boundary in Wafer Fab Scheduling and
             Multiechelon Inventory},
