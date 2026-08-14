@@ -1,14 +1,15 @@
 # Locating the Machine Learning Boundary in Wafer Fab Scheduling and Multiechelon Inventory
 
 Code and data for the manuscript *Locating the Machine Learning Boundary in
-Wafer Fab Scheduling and Multiechelon Inventory* by H. Han, **submitted to the
+Wafer Fab Scheduling and Multiechelon Inventory*, **submitted to the
 [INFORMS Journal on Computing](https://pubsonline.informs.org/journal/ijoc)**.
 The code is under the [MIT License](LICENSE).
 
-The manuscript is under review. It has not been accepted and no decision has
-been made, so nothing here should be read as a journal publication. This
-repository exists so that a referee, or anyone else, can check any number in
-the manuscript against the runs it came from.
+The manuscript is under review under a double-anonymous process, so no author
+is named here. It has not been accepted and no decision has been made, and
+nothing here should be read as a journal publication. This repository exists so
+that a referee, or anyone else, can check any number in the manuscript against
+the runs it came from.
 
 If the paper is accepted, this repository is deposited in the
 [INFORMSJoC](https://github.com/INFORMSJoC) organisation under the manuscript's
@@ -21,13 +22,14 @@ Until the paper appears, cite the manuscript itself and this repository by its
 URL. No DOI has been assigned to either.
 
 ```
-@misc{han2026locating,
-  author       = {Han, Henry},
+@misc{locating2026,
   title        = {Locating the Machine Learning Boundary in Wafer Fab Scheduling
                   and Multiechelon Inventory},
   year         = {2026},
   howpublished = {Manuscript under review, INFORMS Journal on Computing},
-  note         = {Code and data at https://github.com/[repository]},
+  note         = {Authorship withheld during double-anonymous review.
+                  Anonymous mirror for referees at
+                  https://anonymous.4open.science/r/IJOC-0814/},
 }
 ```
 
@@ -132,4 +134,6 @@ the labels, and therefore every table trained on them, reproduce exactly.
 
 ## Support
 
-For support, contact Henry Han at Henry_Han@Baylor.edu.
+During review, questions go through the editorial office of the INFORMS
+Journal on Computing rather than to the authors. A contact address is added
+here when the paper appears.
