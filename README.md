@@ -1,7 +1,6 @@
 # Locating Machine Learning Boundary in Wafer Fab Scheduling and Multiechelon Inventory
 
-This archive is distributed in association with the [INFORMS Journal on
-Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT
+This archive is distributed under the [MIT
 License](LICENSE).
 
 The software and data in this repository are a snapshot of the software and data
