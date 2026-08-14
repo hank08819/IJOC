@@ -21,13 +21,13 @@ Until the paper appears, cite the manuscript itself and this repository by its
 URL. No DOI has been assigned to either.
 
 ```
-@unpublished{han2026locating,
-  author = {Han, Henry},
-  title  = {Locating the Machine Learning Boundary in Wafer Fab Scheduling and
-            Multiechelon Inventory},
-  year   = {2026},
-  note   = {Manuscript submitted to the INFORMS Journal on Computing.
-            Code and data at https://github.com/[repository]},
+@misc{han2026locating,
+  author       = {Han, Henry},
+  title        = {Locating the Machine Learning Boundary in Wafer Fab Scheduling
+                  and Multiechelon Inventory},
+  year         = {2026},
+  howpublished = {Manuscript under review, INFORMS Journal on Computing},
+  note         = {Code and data at https://github.com/[repository]},
 }
 ```
 
